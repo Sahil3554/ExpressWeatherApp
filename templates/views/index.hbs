@@ -1,0 +1,24 @@
+{{>head}}
+    <div class="app">
+        <div class="temp">
+            <div class="head_section">
+                <i id="icon" class="{{icons}}" style="font-size:60px;color:wheat;"  aria-hidden="true" ></i>
+                {{!-- <i class="fa fa-cloud"style="font-size:60px;color:wheat;"></i> --}}
+                <p id="temp">{{temp}}&deg;C</p>
+            </div>
+            <p class="temp_disc">{{status}}</p>
+           
+            <div class="temp_line">
+                <p id="min_temp">Min:{{min_temp}}&deg;C</p>
+                <p id="max_temp">Max:{{max_temp}}&deg;C</p>
+            </div>
+
+        </div>
+        <div class="city">
+            <h2>{{city}}, {{country}}</h2>
+        </div>
+        <div class="change_city">
+            <a href="/">Change City</a>
+        </div>
+    </div>
+    {{>footer}}

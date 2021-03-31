@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    color: red;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #8e72e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.app{
+    /* height: 44vh; */
+    width: 60vw;
+    /* background-color:blue; */
+    box-shadow: 2px 2px 20px 20px skyblue;
+}
+.temp{
+    height: 30vh;
+    width: 100%;
+    color: wheat;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.city{
+    /* height: 9vh; */
+    width: 100%;
+    color: lightgreen;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 0px;
+    
+}
+.change_city{
+    color: white;
+    background-color: #772bcc;
+    padding: 4px 0px;
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.temp_line{
+    position: absolute;
+    /* background-color: brown; */
+    bottom: 14px;
+    display: flex;
+    flex-direction: row;
+    margin: -7px 4px;
+}
+
+#max_temp{
+    margin-left:20px ;
+}
+#temp{
+    font-size: 2rem;
+    position: absolute;
+    top: 78px;
+}
+.far{
+    position: absolute;
+    top: 20px;
+}
+.temp_disc{
+    position: absolute;
+    top: 110px;
+    margin: 4px 4px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+footer p{
+    padding: 13px 0px;
+}
+form{
+    position: relative;
+}
+input{
+    border: none;
+    outline: none;
+    padding: 10px 0px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+button{
+    position: absolute;
+    right: 6px;
+    top:3px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+.fa{
+    color: black;
+    
+}
+.head_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.head_section #icon{
+    position: absolute;
+    top: 10px;
+}
+/* input,button{
+    position: absolute;
+    top: 20px ;
+} */
+@media (min-width:670px){
+    .app{
+        width: 290px;
+    }
+    .temp_disc{
+        top: 130px;
+        margin: 4px 4px;
+    }    
+    #temp{
+        font-size: 2rem;
+        position: absolute;
+        top: 88px;
+    }
+}
+@media (max-width:280px){
+    .app{
+        width: 260px;
+    }
+}

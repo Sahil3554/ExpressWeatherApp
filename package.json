@@ -1,0 +1,16 @@
+{
+  "name": "expressweather",
+  "version": "1.0.0",
+  "description": "Weather App Using Express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sahil Tagra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "requests": "^0.3.0"
+  }
+}
