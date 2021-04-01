@@ -35,6 +35,14 @@ app.get("/",(req,res) => {
       // console.log(data.weather[0].main);
       // console.log(data.name);
       // console.log(data.sys.country);
+      if ((data.cod) ==404 ){
+          res.render("select",{
+            error: data.message
+          });
+      } 
+      else {
+        
+      
       let cur_temp = calcTemp(data.main.feels_like);
       let temp_max = calcTemp(data.main.temp_max);
       let temp_min = calcTemp(data.main.temp_min);
@@ -43,17 +51,18 @@ app.get("/",(req,res) => {
         icon ="fa fa-cloud";
       }
       else{
-        icon = "fas fa-sun";
-      }
-      res.render('index',{
-        temp: cur_temp,  
-        city: data.name,
-        min_temp: temp_min,        
-        max_temp: temp_max,
-        country: data.sys.country,
-        status: data.weather[0].main,
-        icons:icon
-      });
+          icon = "fas fa-sun";
+        }
+        res.render('index',{
+          temp: cur_temp,  
+          city: data.name,
+          min_temp: temp_min,        
+          max_temp: temp_max,
+          country: data.sys.country,
+          status: data.weather[0].main,
+          icons:icon
+        });
+    }
     })
     .on('end', function (err) {
       if (err) return console.log('connection closed due to errors', err);

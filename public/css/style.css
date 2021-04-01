@@ -122,6 +122,10 @@ button{
     position: absolute;
     top: 10px;
 }
+#search_error{
+    text-transform: capitalize;
+    margin: 2px 0px;
+}
 /* input,button{
     position: absolute;
     top: 20px ;
